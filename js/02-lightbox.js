@@ -19,7 +19,7 @@ for (let i = 0; i < galleryItems.length; i += 1) {
 
 console.log(galleryItems);
 
-gallery.insertAdjacentHTML("beforeend", galleryMarkup);
+gallery.insertAdjacentHTML("beforeend", galleryMarkup.join(''));
 
 new SimpleLightbox(".gallery a", {
   captionsData: "alt",
